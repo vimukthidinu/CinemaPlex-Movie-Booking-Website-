@@ -1,0 +1,32 @@
+
+.places{
+    margin-top: 5%;
+}
+.places h1{
+
+color: white;
+text-align: center;
+
+}
+.cardloc {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    display: inline-block;
+    text-align: left;
+    font-family: arial;
+    margin-left: 3.5%;
+    margin-top: 5%;
+    border: solid 1px white;
+    border-radius: 8px;
+
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 10%;
+  }
+  
+ 
+ 

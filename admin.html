@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style2.css"> 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="css/userlogin.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" type="image" href="images/icon2.jpg">
+</head>
+<body style="background-image: url(images/background2.jpg);">
+    <form action="adminlogin.php" method="post">
+    <section>
+        <div class="login-container">
+          <h2>Admin LOG IN</h2>
+  
+          <form>
+            <div class="input-box">
+              <span class="icon">
+                <i style="font-size:24px" class="fa">&#xf0e0;</i>
+              </span>
+  
+              <input required type="text" name="admin_name" id="admin_name">
+              <label for="admin_name">User Name</label>
+            </div>
+    
+            <div class="input-box">
+              <span class="icon">
+                <i style="font-size:24px" class="fa">&#xf023;</i>
+              </span>
+  
+              <input required type="password" name="ad_password" id="ad_password">
+              <label for="ad_password">password</label>
+            </div>
+    
+           
+            <a href="admin_panel.html"><button id="logbtn" type="submit">Log In</button></a>
+          </form>
+  
+          <div class="create-account">
+              <a href="admin_account.html" id="a">create-account</a>
+          </div>
+        </div>
+      </section>  
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.container3 {
+ 
+  position: relative;
+width:300px;
+ display: inline-block;
+  margin:10px;
+  
+}
+
+.image {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 300px;
+  border-radius: 8px;
+  height: auto;
+  float: left;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0009;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  margin-top: 30%;
+  margin-left: 10%;
+  width:300px ;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 8px;
+}
+
+.container3:hover .overlay3 {
+  height:93%;
+}
+
+.text3 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left:45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#btn{
+border: none;
+padding: 15px;
+border: 2px solid white;
+margin-bottom: 3%;
+
+}
+
+#btn:hover{
+  color: blueviolet;
+}
+p{
+  font-weight: bold;
+}

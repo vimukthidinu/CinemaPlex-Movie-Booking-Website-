@@ -1,0 +1,70 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 60px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+.card {
+  background: black;
+  border-radius: 8px;
+ 
+}
+.card .image-box {
+  height: 300px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 150%;
+  border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px;
+  margin-top: 50%;
+  color: white;
+
+}
+#btn{
+border: none;
+padding: 15px;
+border: 2px solid white;
+margin-bottom: 2%;
+
+}
+
+#btn:hover{
+  color: blueviolet;
+}
+p{
+  font-weight: bold;
+}
+.swiper-navBtn {
+  color:white;
+  height: 50px;
+  width: 50px;
+  transform: translateY(-40%);
+  background-color: black;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 20px;
+  color: rgb(176, 39, 230);
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaPlex</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="styleticket2.css">
+    <link rel="stylesheet" href="styleold.css">
+    <link rel="icon" type="image" href="/images/icon2.jpg">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body id="body">
+    <h1>CinemaPlex Booking</h1>
+    <form action="buytickets.php" method="post" id="booking-form">
+    <div class="movie-container">
+        <label >Pick a movie :</label>
+        <select id="movie" name="movie">
+            <option value="10">KATHURU MITHURU ($10)</option>
+            <option value="12">JAWAN ($12)</option>
+            <option value="8">NUN 2 ($8)</option>
+            <option value="9"> BLUE BEETLE ($9)</option>
+            <option value="10">THE MISSION-IMPOSIBBLE($10)</option>
+            <option value="12">ROCKY AUR RANI KII PREM KAHAANI (HINDI)($12)</option>
+            <option value="8">THE MARVELS ($8)</option>
+            <option value="9"> THE HUNGER GAMES: THE BALLAD OF SONGBIRDS AND SNAKES($9)</option>
+            <option value="10">SHANG CHI($10)</option>
+            <option value="12"> WONKA ($12)</option>
+        </select><br><br>
+        <label for="location"  >LOCATIONS :</label>
+        <select name="location" id="location" style="margin-left:2.9%;">
+            <option value="SCOPE CINEMAS MULTIPLEX - Colombo City Centre">SCOPE CINEMAS MULTIPLEX - Colombo City Centre</option>
+            <option value="LIBERTY BY SCOPE CINEMAS - Colpetty">LIBERTY BY SCOPE CINEMAS - Colpetty</option>
+            <option value="LIBERTY BY SCOPE CINEMAS - Kiribathgoda">LIBERTY BY SCOPE CINEMAS - Kiribathgoda</option>
+        </select><br><br>
+        <label>DATE :</label>
+        <select name="today" id="date" style="margin-left: 9.7%;" >
+          <option value="2023-10-03">Tue, 03 Oct </option>
+          <option value="2023-10-04">Wed, 04 Oct </option>
+          <option value="2023-10-05">Thu, 05 Oct </option>
+          <option value="2023-10-13">Fri, 13 Oct </option>
+          <option value="2023-10-14">Sat, 14 Oct </option>
+          <option value="2023-10-15">Sun, 15 Oct </option>
+          <option value="2023-10-19">Thu, 19 Oct </option>
+          <option value="2023-10-20">Fri, 20 Oct </option>
+          <option value="2023-10-21">Sat, 21 Oct </option>
+          <option value="2023-10-22">Sun, 22 Oct </option>
+          <option value="2023-10-26">Thu, 26 Oct </option>
+          <option value="2023-10-27">Fri, 27 Oct </option>
+          <option value="2023-10-29">Sun, 29 Oct </option>
+          <option value="2023-11-02">Thu, 02 Nov </option>
+          <option value="2023-11-03">Fri, 03 Nov </option>
+          <option value="2023-11-04">Sat, 04 Nov </option>
+          <option value="2023-11-05">Sun, 05 Nov </option>
+        </select><br><br>
+        <label>SHOW-TIME :</label>
+        <select name="TIME" id="time" style="margin-left:2.5%;">
+            <option value="9.00 AM">9.00 AM</option>
+            <option value="3.30 PM">3.30 PM </option>
+            <option value="6.00 PM">6.00 PM</option>
+        </select>
+
+
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="movie-screen">
+            <img src='screen-thumb.png' alt='screen' />
+        </div>
+
+        <div class="row-container">
+            <div class="row">
+           
+             <button class="seat"  value="A1"  type="button">A1</button>
+             <button class="seat" id="A2"  type="button">A2</button>
+             <button class="seat" id="A3"  type="button">A3</button>
+             <button class="seat" id="A4"  type="button">A4</button>
+             <button class="seat"id="A5"   type="button">A5</button>
+             <button class="seat" id="A6"  type="button">A6</button>
+             <button class="seat" id="A7"  type="button">A7</button>
+             <button class="seat" id="A8"  type="button">A8</button>
+            </div>
+            <div class="row">
+        
+               <button class="seat" id="B1" type="button">B1</button>
+               <button class="seat" id="B2" type="button">B2</button>
+               <button class="seat" id="B3" type="button">B3</button>
+                <button class="seat"id="B4" type="button">B4</button>
+                <button class="seat" id="B5"type="button">B5</button>
+               <button class="seat" id="B6" type="button">B6</button>
+               <button class="seat" id="B7" type="button">B7</button>
+               <button class="seat" id="B8" type="button">B8</button>
+            </div>
+            <div class="row">
+            
+               <button class="seat" id="c1"  type="button">C1</button>
+               <button class="seat"id="c2"   type="button">C2</button>
+               <button class="seat" id="c3"  type="button">C3</button>
+               <button class="seat" id="c4"  type="button">C4</button>
+               <button class="seat" id="c5"  type="button">C5</button>
+               <button class="seat"  id="c6" type="button">C6</button>
+                <button class="seat" id="c7" type="button">C7</button>
+                <button class="seat" id="c8" type="button">C8</button>
+            </div>
+            <div class="row">
+            
+               <button class="seat" id="D1"  type="button">D1</button>
+               <button class="seat" id="D2"  type="button">D2</button>
+               <button class="seat" id="D3"  type="button">D3</button>
+               <button class="seat" id="D4"  type="button">D4</button>
+               <button class="seat" id="D5"  type="button">D5</button>
+               <button class="seat" id="D6"  type="button">D6</button>
+               <button class="seat"  id="D7" type="button">D7</button>
+               <button class="seat" id="D8"  type="button">D8</button>
+            </div>
+            <div class="row">
+           
+               <button class="seat" id="E1"  type="button">E1</button>
+               <button class="seat" id="E2"  type="button">E2</button>
+               <button class="seat" id="E3"  type="button">E3</button>
+                <button class="seat" id="E4" type="button">E4</button>
+                <button class="seat" id="E5" type="button">E5</button>
+               <button class="seat"  id="E6" type="button">E6</button>
+               <button class="seat" id="E7"  type="button">E7</button>
+               <button class="seat"  id="E8" type="button">E8</button>
+            </div>
+        
+            <div class="row">
+            
+               <button class="seat" id="F1"  type="button">F1</button>
+               <button class="seat" id="F2"  type="button">F2</button>
+               <button class="seat" id="F3"  type="button">F3</button>
+               <button class="seat" id="F4"  type="button">F4</button>
+               <button class="seat" id="F5"  type="button">F5</button>
+               <button class="seat" id="F6"  type="button">F6</button>
+               <button class="seat" id="F7"  type="button">F7</button>
+               <button class="seat" id="F8"  type="button">F8</button>
+            </div>
+            <div class="row">
+       
+               <button class="seat" id="G1"  type="button">G1</button>
+               <button class="seat" id="G2"  type="button">G2</button>
+               <button class="seat" id="G3"  type="button">G3</button>
+               <button class="seat" id="G4"  type="button">G4</button>
+                <button class="seat" id="G5" type="button">G5</button>
+                <button class="seat" id="G6" type="button">G6</button>
+                <button class="seat" id="G7" type="button">G7</button>
+               <button class="seat" id="G8"  type="button">G8</button>
+            </div>
+            <div class="text-wrapper">
+                Selected Seats: <span id="count">0</span>
+               
+            
+                Total Price $: <span>
+              <span id="total" name="totalPrice">0
+            </span>
+            </div>
+          
+            <br><br>
+           
+        </div>
+
+    </div>
+    <button type="submit" style="margin-left: 40%;">Book Now</button>
+</form>
+
+  
+
+    <script src='script.js'></script>
+    <footer class="footer" style="width: 100%;">
+        <hr>
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>CINEMA TICKETS</h4>
+             <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="movies.html">MOVIES</a></li>
+               <li><a href="location.html">LOCATIONS</a></li>
+               <li><a href="deals%20and%20exclusives.html">DEALS AND EXCLUSIVES</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+            <a><li><i style="font-size:24px" class="fa">&#xf095;</i> ( 09.00 am - 06.00 pm Monday - Friday )
+                0112083063 / 0703387602</li></a><br>
+             <a><li><i style="font-size:24px" class="fa">&#xf0e0;</i> helpdesk@gmail.com</li></a>
+            </ul>
+          </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="https://web.facebook.com/scopecinemas?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/scopecinemas/" target="_blank"><i class="fab fa-instagram"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+        <P style="text-align: center;color: white;">©2022 Cinemas All Right Reserved. Developed by Archmage Solutions.</P>
+      </footer>
+</body>
+
+</html>

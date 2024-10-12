@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+  h1{
+    color: black;
+    margin-top: 20%;
+    
+  }
+  .column {
+ 
+    float: left;
+    width: 50%;
+    padding: 5px;
+    margin-top: 10%;
+    background-color: rgb(201, 196, 196);
+
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+img{
+    width: 30%;
+    transition: transform .2s;
+    border-radius: 25px;
+    
+}
+img:hover{
+    
+    transform: scale(1.1);
+}

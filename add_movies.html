@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add movies</title>
+    <style>
+        body{
+            background-image: url(images/admin/admin_pannel.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 50px;
+            color: white;
+
+        }
+        form{
+            background-color: #0009;
+            backdrop-filter: blur(5px);
+            padding: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: solid 2px white;
+            border-radius: 10px;
+            text-align: left;
+        }
+        label{
+            font-size:50px;
+            color: white;
+        }
+        input{
+            font-size:40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add movie</h1>
+    <form action="add_movies.php" method="POST" enctype="multipart/form-data">
+       <label for="movie_name">Movie Name:</label>
+        <input type="text" name="movie_name" required style="margin-left:10%;"><br><br>
+        
+        <label for="description">Movie description:</label>
+        <input type="text" name="movie_descrip" required><br><br>
+
+        <label for="price">Movie price:</label>
+        <input type="text" name="movie_price" required style="margin-left:12%;"><br><br>
+        
+        <label for="image">Image:</label>
+        <input type="file" name="movie_image" style="margin-left:10%; color: white;"><br><br>
+        
+        
+        <input type="submit" name="submit" value="Add Movie" style="margin-left:40%;margin-top: 5%;padding: 2%;">
+    </form>
+</body>
+</html>

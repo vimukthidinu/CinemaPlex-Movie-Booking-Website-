@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaPlex-user login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style2.css"> 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="css/userlogin.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" type="image" href="images/icon2.jpg">
+</head>
+<body style="background-image: url(images/background2.jpg);">
+    <form action="userlogin.php" method="post">
+    <section>
+        <div class="login-container">
+          <h2>LOG IN</h2>
+  
+          <form>
+            <div class="input-box">
+              <span class="icon">
+                <i style="font-size:24px" class="fa">&#xf0e0;</i>
+              </span>
+  
+              <input required type="email" name="email" id="email">
+              <label for="email"> Email</label>
+            </div>
+    
+            <div class="input-box">
+              <span class="icon">
+                <i style="font-size:24px" class="fa">&#xf023;</i>
+              </span>
+  
+              <input required type="password" name="password" id="contraseña">
+              <label for="contraseña">password</label>
+            </div>
+  
+            <a href="index.html"><button id="logbtn" type="submit">Log In</button></a>
+          </form>
+  
+          <div class="create-account">
+              <a href="user_account.html" id="a">create-account</a>
+          </div>
+        </div>
+      </section>  
+    </form>
+      <footer class="footer">
+        <hr>
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>CINEMA TICKETS</h4>
+             <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="movies.html">MOVIES</a></li>
+               <li><a href="location.html">LOCATIONS</a></li>
+               <li><a href="deals%20and%20exclusives.html">DEALS AND EXCLUSIVES</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+            <a><li><i style="font-size:24px" class="fa">&#xf095;</i> ( 09.00 am - 06.00 pm Monday - Friday )
+                0112083063 / 0703387602</li></a><br>
+             <a><li><i style="font-size:24px" class="fa">&#xf0e0;</i> helpdesk@gmail.com</li></a>
+            </ul>
+          </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="https://web.facebook.com/scopecinemas?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/scopecinemas/" target="_blank"><i class="fab fa-instagram"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+        <P style="text-align: center;color: white;">©2022 Cinemas All Right Reserved. Developed by Archmage Solutions.</P>
+      </footer>
+</body>
+</html>

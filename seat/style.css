@@ -1,0 +1,269 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  background-color: black;
+}
+  .mytopnav {
+  overflow: hidden;
+  background-color: #0009;
+  padding: 10px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(1px);
+
+}
+
+  .mytopnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+  .mytopnav #logo {
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  transition: 0.4s;
+  margin-right: 10%;
+  text-decoration: none;
+}
+.mytopnav #logo:hover{
+  color: white;
+}
+  .mytopnav a:hover {
+
+  color:rgb(176, 39, 230);
+}
+
+  .mytopnav a.active {
+  background-color: dodgerblue;
+  color: white;
+  margin-left: 5%;
+}
+a.active:hover{
+  background-color: rgb(176, 39, 230);
+  color: white;
+  margin-left: 5%;
+  text-decoration: none;
+}
+  .mytopnav-right {
+  float: right;
+}
+
+
+.mytopnav .icon {
+  display: none; 
+}
+
+
+@media screen and (max-width: 580px) {
+   .mytopnav {
+    padding:  10px !important;
+  }
+    .mytopnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+   .mytopnav-right {
+    float: none;
+  }
+
+}
+  @media screen and (max-width: 1200px) {
+    .mytopnav a:not(:first-child) {display: none;}
+    .mytopnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+   .mytopnav.responsive {position: relative;}
+  .mytopnav.responsive .icon {
+    position:absolute ;
+    right: 0;
+    top: 0;
+  }
+  .mytopnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.mySlides {display: none}
+img {
+  background-size: cover;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+  
+}
+
+/* Caption text */
+.text {
+  color:white;
+ 
+  background-color: #0009;
+  backdrop-filter: blur(1px);
+  font-size: 46px;
+  font-weight: bold;
+ 
+  padding: 8px 20px;
+  position: absolute;
+  
+  bottom: 8px;
+  width: 100%;
+
+ 
+}
+button {
+  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button {
+  background-color:transparent; 
+  color: white; 
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+button:hover{
+
+color:rgb(170, 8, 170);
+}
+/* Fading animation */
+.fade {
+  animation-name:fade;
+ 
+  animation-duration: 0.5s;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+  
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+ul{
+  list-style: none;
+  color:  #bbbbbb;
+  
+}
+li:hover{
+  color: rgb(176, 39, 230);
+}
+.footer{
+  background-color: black;
+    padding: 150px 0;
+  
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   
+   margin-left: 7%;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color:rgb(176, 39, 230);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color:  #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: rgb(176, 39, 230);
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
